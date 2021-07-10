@@ -43,7 +43,7 @@ class GlobalLogger : public ILogger
 	  /// Outside the specified range the log message type are disabled (!enabledFlag).
 	  /// </remarks>
 	void ActivateLog(LogMessageType fromLevel, LogMessageType toLevel = LogMessageType::Fatal, bool enabledFlag = true);
-	sigslot::signal<ILogMessage> GlobalMessageLogged;
+	static sigslot::signal<ILogMessage> GlobalMessageLogged;
 	
 
   private:

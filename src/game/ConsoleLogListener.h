@@ -4,5 +4,6 @@
 #include "ILogMessage.h"
 class ConsoleLogListener : public ILogListener
 {
+  public:
   void OnLog(ILogMessage logMessage);
 };

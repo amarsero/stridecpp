@@ -4,8 +4,9 @@
 class Game : public GameBase
 {
 public:
-
+Game();
 private:
+  ConsoleLogListener logListener;
   GlobalLogger *Logger;
   StreamingManager StreamingManager;
 };
